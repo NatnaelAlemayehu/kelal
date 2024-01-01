@@ -1,0 +1,126 @@
+/* ChatInterface.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: 0 auto;
+    height: 95vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+  }
+  
+  .chatArea {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    align-self: flex-end;
+    background: #e6e6ff;
+    margin-bottom: 2px;
+    word-break: break-word;
+  }
+  
+  .inputArea {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #eee;
+  }
+  
+  .form {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    position: relative;
+    padding-top: 60px; /* Make room for the image preview */
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .imagePreview {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .previewImage {
+    max-width: calc(100% - 6px);
+    max-height: 50px; /* Adjust as needed */
+  }
+  
+  .removeImageButton {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff4545;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5b6ef5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sendButton {
+    /* Additional styles if needed */
+  }
+  
+  .button:hover {
+    background-color: #4a5bd4;
+  }
+  
+  .button:active {
+    background-color: #3949ab;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  .uploadedImage{
+    width: 100%;
+  }
+  
